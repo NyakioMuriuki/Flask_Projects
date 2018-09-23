@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Welcome to the username authenticator site!</h2>
+<h3> Please enter a password that meets the following requirements </h3>
+<p>Must have at least on uppercase and one lowercase letter.</p>
+<p>Must have a letter at the end.</p>
+
+
+        
+    <form action="{{url_for('report')}}" class="form-inline">
+        <label for="user_name">User_Name:</label>
+        <input type="text" name = 'name'>
+        <input type="submit" value="Sign_Up">
+    </form>
+            
+{% endblock %}
